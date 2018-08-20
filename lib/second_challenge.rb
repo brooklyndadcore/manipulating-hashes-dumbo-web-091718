@@ -6,7 +6,8 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  return groceries.each {|k| k.values}
+  shopping_list = []
+  groceries.each {|k, v| shopping_list << v }
+  return shopping_list.flatten
   
-
 end
