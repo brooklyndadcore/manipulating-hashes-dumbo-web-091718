@@ -6,7 +6,7 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  reut
+  return groceries.each {|k| [k.values]}
   
 
 end
